@@ -49,3 +49,22 @@ exports.parseStationEx = function parseStationEx(data) {
   })
   return arr
 }
+
+exports.parseText = function parseText(data) {
+  const list = data.text
+  const arr = []
+  list.forEach(item => {
+    const title = item._
+    const transform = item['$']['transform']
+
+    const xy = /\((.*)\)/.exec(transform)[1].split(' ')
+    const x = parseFloat(xy[0])
+    const y = parseFloat(xy[1])
+    arr.push({
+      title,
+      x,
+      y
+    })
+  })
+  return arr
+}

@@ -1,5 +1,5 @@
 const { loadSvgFile, writeJsonFile } = require('./utils/file')
-const { parseLine, parseStation, parseStationEx } = require('./core/parse')
+const { parseLine, parseStation, parseStationEx, parseText } = require('./core/parse')
 const css2json = require('css2json')
 
 async function init(filename) {
@@ -14,7 +14,8 @@ async function init(filename) {
     width: parseFloat(viewBox[2]),
     height: parseFloat(viewBox[3]),
     lines: [],
-    stations: []
+    stations: [],
+    texts: []
   }
 
   svg.forEach(item => {
@@ -27,6 +28,9 @@ async function init(filename) {
     }
     if (id === 'station-ex') {
       json['stations'] = json['stations'].concat(parseStationEx(item))
+    }
+    if (id === 'text') {
+      json['texts'] = parseText(item)
     }
   })
   writeJsonFile(`${filename}.json`, json)
