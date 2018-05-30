@@ -1,6 +1,6 @@
 {
   "name": "subway-svg-tools",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Subway svg tools",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "css2json": "^0.0.4",
     "xml2js": "^0.4.19"
   }
 }
