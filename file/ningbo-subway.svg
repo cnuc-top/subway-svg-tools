@@ -8,7 +8,7 @@
     <polyline class="cls-1" points="110.63 1239.63 608.5 741.75 608.5 567.25 870.25 305.5 1109 305.5 1442.25 -27.75"/>
     <polyline class="cls-1" points="0 422.5 450.5 422.5 611.5 583.5"/>
     <polyline class="cls-1" points="452.5 428.5 543.5 337.5 618.5 412.5"/>
-</g>
+  </g>
   <g id="line">
     <polyline id="line-1" class="cls-2" points="110.5 616.5 1009 616.5 1316.5 616.5 1316.5 325 1474.5 325"/>
     <polyline id="line-2" class="cls-3" points="1253.25 259.25 1177.5 183.5 925 183.5 748 360.5 665.5 360.5 665.5 457 534.5 588 534.5 680 480 734.5 358.5 734.5 358.5 906 182.5 906"/>
@@ -21,7 +21,7 @@
     <polyline id="line-k1" class="cls-10" points="627 1059 627 1002.5 574.5 950 574.5 835 647 762.5 647 598 845.75 399.25 734.5 288 734.5 172.75 621.63 59.88 516.5 59.88"/>
     <polyline id="line-k2" class="cls-11" points="64.5 185.5 166 185.5 166 523.5 239 596.5 239 696 352.5 696 379.5 669 1005.5 669 1005.5 900 1059 953.5 1059 1060"/>
     <polyline id="line-s3" class="cls-4" points="707.5 1038 558.5 1038 435.25 1161.25"/>
-</g>
+  </g>
   <g id="station-ex">
     <rect class="cls-12" x="526.5" y="612.2" width="16" height="9" rx="4.5" ry="4.5"/>
     <rect class="cls-12" x="527.5" y="665" width="16" height="9" rx="4.5" ry="4.5"/>
@@ -82,7 +82,7 @@
     <rect class="cls-12" x="487.5" y="715" width="16" height="9" rx="4.5" ry="4.5"/>
     <rect class="cls-12" x="450.5" y="525" width="16" height="9" rx="4.5" ry="4.5"/>
     <rect class="cls-12" x="407.62" y="568.5" width="16" height="9" rx="4.5" ry="4.5"/>
-</g>
+  </g>
   <g id="station">
     <circle id="东门口" class="cls-12" cx="574" cy="616.5" r="4.5"/>
     <circle id="舟孟北路" class="cls-12" cx="736" cy="616.5" r="4.5"/>
@@ -215,7 +215,7 @@
     <circle class="cls-12" cx="597" cy="973.5" r="4.5"/>
     <circle class="cls-12" cx="611" cy="909.5" r="4.5"/>
     <circle class="cls-12" cx="763" cy="909.5" r="4.5"/>
-</g>
+  </g>
   <g id="text">
     <text class="cls-13" transform="translate(544.33 602.5)">鼓楼</text>
     <text class="cls-13" transform="translate(559.33 636.5)">东门口</text>

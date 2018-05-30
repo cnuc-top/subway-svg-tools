@@ -37,7 +37,7 @@ exports.parseStationEx = function parseStationEx(data) {
   const arr = []
   list.forEach(item => {
     item = item['$']
-    const { id: name = '未命名站', rx: x, ry: y, width, height } = item
+    const { id: name = '未命名站', x, y, width, height } = item
     arr.push({
       name,
       x,
