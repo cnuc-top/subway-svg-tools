@@ -8,6 +8,7 @@ exports.parseLine = function parseLine(data, style) {
 
     const css = style['.' + item.class]
     arr.push({
+      id: item.id,
       name,
       points,
       color: css.stroke
