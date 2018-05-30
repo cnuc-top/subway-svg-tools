@@ -1,22 +1,22 @@
-const fs = require('fs')
-const xml2js = require('xml2js')
-const parser = new xml2js.Parser()
+const { loadSvgFile, writeJsonFile } = require('./utils/file')
 
-fs.readFile(__dirname + '/file/ningbo-subway.svg', function(err, data) {
-  parser.parseString(data, function(err, result) {
-    parseSvg(result)
-  })
-})
-
-function parseSvg(data) {
+async function init(filename) {
+  const data = await loadSvgFile(`${filename}.svg`)
   const svg = data.svg.g
+  const json = {}
+
   svg.forEach(item => {
     const id = item['$']['id']
+    console.log(id)
     if (id === 'line') {
-      parseLine(item)
+      json['line'] = parseLine(item)
     }
   })
+
+  writeJsonFile(`${filename}.json`, json)
 }
+
+init('ningbo-subway')
 
 function parseLine(data) {
   const list = data.polyline
@@ -31,4 +31,5 @@ function parseLine(data) {
       class: item.class
     })
   })
+  return arr
 }
