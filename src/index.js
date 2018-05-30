@@ -13,20 +13,20 @@ async function init(filename) {
     title: data.svg.title[0],
     width: viewBox[3],
     height: viewBox[4],
-    line: [],
-    station: []
+    lines: [],
+    stations: []
   }
 
   svg.forEach(item => {
     const id = item['$']['id']
     if (id === 'line') {
-      json['line'] = parseLine(item, style)
+      json['lines'] = parseLine(item, style)
     }
     if (id === 'station') {
-      json['station'] = json['station'].concat(parseStation(item))
+      json['stations'] = json['stations'].concat(parseStation(item))
     }
     if (id === 'station-ex') {
-      json['station'] = json['station'].concat(parseStationEx(item))
+      json['stations'] = json['stations'].concat(parseStationEx(item))
     }
   })
   writeJsonFile(`${filename}.json`, json)
