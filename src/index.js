@@ -11,8 +11,8 @@ async function init(filename) {
 
   const json = {
     title: data.svg.title[0],
-    width: viewBox[3],
-    height: viewBox[4],
+    width: parseFloat(viewBox[2]),
+    height: parseFloat(viewBox[3]),
     lines: [],
     stations: []
   }
